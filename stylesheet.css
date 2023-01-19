@@ -1,0 +1,183 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+p{
+    font-family: "Open Sans";
+}
+
+@font-face {
+    font-family: Classique-Saigon;
+    src: url(Classique-Saigon.ttf) format('truetype');
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+/*.grid-container{
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat (12, 1fr);
+    grid-template-rows: repeat(24,1fr);*/
+
+
+
+.nav{
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    height: 0px;
+    margin-right: 7vw;
+}
+
+li.nav{
+    justify-content: right;
+}
+
+a.nav{
+    font-family: "Open Sans";
+    color: #151313; 
+    font-size: 1.5rem;
+    transition: color 0.5s ease-out;
+    transition: font-family 0.5s ease-out;
+    text-decoration: none;
+}
+
+a.nav:hover{
+    font-family: "Classique-Saigon";
+    color: #e32226;
+    font-size: 4rem;
+    text-decoration: none;
+}
+
+ul.nav {
+    list-style-type: none;
+    font-family: "Open Sans";
+    width: 100%;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+    text-align: right;
+    padding-top: 3vw;
+}
+
+div.navline{
+    position:fixed;
+    height: 15rem;
+    width: 1vw;
+    top:0px;
+    right:4vw;
+    background-color:#e32226;
+}
+
+.homepage{
+    gap: 1rem;
+    display: grid;
+    top:0;
+    /* height: 100vh; */
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, calc(100vh / 7));
+    /* background-color: #f1efe3; */
+    scroll-snap-type: x mandatory;
+}
+
+.order-number{
+    grid-area:2/2/3/3;
+    font-family: "Classique-Saigon";
+    font-size: 3em;
+}
+
+.order-name{
+    grid-area:3/2/5/3;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    justify-self: end;
+    line-height: 0px;
+    padding-inline-start: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+.order-block{
+    grid-area:2/1/3/3;
+    background-color: #e32226;
+}
+
+.homepage-title{
+    grid-area:2/3/3/span 6;
+    font-family: "Classique-Saigon";
+    font-size: 5vw;
+    align-self: start;
+}
+
+.homepage-statement{
+    grid-area:3/9/4/11;
+    text-align:left;
+    font-family: "Open Sans", sans-serif;
+    font-size: 2em;
+    text-align: right;
+}
+
+.homepage-pic{
+    grid-area: 2/5/7/span 4; 
+    align-self: end;
+    margin-bottom:0px;
+    padding-bottom:0px;
+}
+
+.about-me{
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(12, calc(100vw/12));
+    grid-template-rows: repeat(6, calc(100vh/6));
+    height: 100vh;
+    background-color: #151313;
+    color: #ffffff;
+}
+
+.about-me-content-one{
+    grid-area: 2/4/5/7;
+}
+
+.about-me-content-two{
+    grid-area: 4/7/5/10;
+}
+
+.about-me-pic{
+    grid-area: 1/7/4/10;
+    width: calc(100vw/6*3);
+    height: calc(100vh/12*2);
+    display:inline-table;
+}
+
+img.about-me-pic{
+    object-fit:cover;
+}
+
+.my-work{
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat (12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    height: 100vh;
+    background-color: #f1efe3;
+    grid-area: 13/1/19/13;
+}
+
+.contact{
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat (12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    height: 100vh;
+    background-color: #151313;
+    grid-area: 19/1/25/13;
+}
